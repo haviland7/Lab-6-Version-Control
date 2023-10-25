@@ -8,13 +8,15 @@ def encoder(message):
 
 def main():
     while True:
+        print("Menu")
+        print("-------------")
         print("1. Encode")
         print("2. Decode")
         print("3. Quit")
         choice = input("Please enter an option: ")
         if choice == "1":
             value = input("Please enter your password to encode: ")
-            print("Encoded password is", encoder(value))
+            print("Your password has been encoded and stored!")
             encoded = encoder(value)
         elif choice == "2":
             print(f"The encoded password is {encoder(value)} and the original password is {decoder(encoded)}")

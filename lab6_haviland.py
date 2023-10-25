@@ -1,3 +1,5 @@
+# Shane Haviland
+
 def encode(message):
     result = ''
     for digit in message:

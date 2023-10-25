@@ -6,7 +6,15 @@ def encode(message):
         new_digit = str((int(digit) + 3) % 10)
         result += new_digit
     return result
-
+def decode(message):
+    stuff=""
+    V={"0":"7","1":"8","2":"9"}
+    for l in message:
+        if int(l)<3:
+            stuff=stuff+V[l]
+        else:
+            stuff=stuff+str(int(l)-3)
+    return stuff
 
 def main():
     while True:
